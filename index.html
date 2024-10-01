@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="titulo">ALTERAR COR D ÁGINA USANDO CONST</h1>
+  <button onclick="mudarCor()">clique para mudar a cor de fundo</button>
+  
+<script>const cores = ['red' , 'blue' , 'green' , 'yellow' , 
+'purple' , 'orange' ,  'pink ', , 'brown'];
+let indiceCor = 0;
+
+function mudarCor() {
+document.body.style.backgroundColor = cores[indiceCor];
+indiceCor = (indiceCor + 1) % cores.length;
+}
+
+
+
+</script>
+
+</body>
+</html>
